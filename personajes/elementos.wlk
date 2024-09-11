@@ -14,7 +14,7 @@ object castillo {
         nivelDeDefensa = 200.min(nivelDeDefensa + 20)
     }
     method otorgarValor(){
-        return nivelDeDefensa * 0.20
+        return nivelDeDefensa * 0.2
     }
 }
 

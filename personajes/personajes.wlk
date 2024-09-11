@@ -3,7 +3,7 @@ import armas.*
 object floki {
     var arma = ballesta
     method encontrar(elemento) {
-        if arma.estaCargada(){
+        if (arma.estaCargada()){
             elemento.recibirAtaque(arma.potenciaDeAtaque())
             arma.registrarUso()
         }
@@ -18,7 +18,7 @@ object floki {
 
 object mario {
     var valorRecolectado = 0
-    var ultimoElementoEncontrado = null
+    var ultimoElementoEncontrado = aurora
     method encontrar(elemento) {
         ultimoElementoEncontrado = elemento
         valorRecolectado = valorRecolectado + elemento.otorgarValor()
